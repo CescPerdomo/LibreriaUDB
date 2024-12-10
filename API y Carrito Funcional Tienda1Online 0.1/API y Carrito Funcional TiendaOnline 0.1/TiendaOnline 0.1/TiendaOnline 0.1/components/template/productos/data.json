@@ -1,0 +1,179 @@
+{
+    "categorias": [
+        {
+            "cat_id": "1",
+            "cat_nombre": "Aventura"
+        },
+        {
+            "cat_id": "2",
+            "cat_nombre": "Romance"
+        },
+        {
+            "cat_id": "3",
+            "cat_nombre": "Terror"
+        },
+        {
+            "cat_id": "4",
+            "cat_nombre": "Ciencia Ficción"
+        }
+    ],
+    "productos": [
+        {
+            "prod_id": "1",
+            "cat_id": "1",
+            "nombre": "Robin Hobb",
+            "precio": 19.95,
+            "descripcion": "Patrick Rothfuss Traspié ha rescatado al príncipe Dedicado de sus secuestradores y en el castillo de Torre de Alce la corte recupera la rutina aunque, ante la fragilidad del reino, Traspié decide trasladarse a la capital para proteger al heredero de las maquinaciones políticas que lo rodean.",
+            "in_stock": true,
+            "cantidad": 10,
+            "rating": 4,
+            "imagen": "assets/images/prod_el_bufon_dorado.avif",
+            "instock": true,
+            "tag_name" : "#Aventura"
+        },
+        {
+            "prod_id": "2",
+            "cat_id": "2",
+            "nombre": "Besos Prohibidos",
+            "precio": 24.95,
+            "descripcion": "Una novela romántica espectralmente divertida en la que nada es lo que parece y en la que alcanzar «el cielo» solo es cuestión de amor y confianza... Y de muchas risas.",
+            "in_stock": true,
+            "cantidad": 11,
+            "rating": 5,
+            "imagen": "assets/images/prod_besos_prohibidos.webp",
+            "instock": true,
+            "tag_name" : "#Romance"
+        },
+        {
+            "prod_id": "3",
+            "cat_id": "3",
+            "nombre": "Mansión del Terror",
+            "precio": 24.95,
+            "descripcion": "Un juego de mesa en forma de libro que lleva al lector a recorrer una terrorífica mansión tan solo con la ayuda de la luz de su móvil a punto de agotarse. Las tiradas de un simple dado determinan el destino del jugador enfrentándole a trampas, hallazgos o encuentros fantasmales decisivos para avanzar en la historia. Cuatro finales combinables de distintas maneras hacen que la experiencia sea entretenida y diferente cada vez. ¡No querrás parar de jugar!",
+            "in_stock": true,
+            "cantidad": 8,
+            "rating": 3,
+            "imagen": "assets/images/prod_mansion_del_terror.avif",
+            "instock": true,
+            "tag_name" : "#Terror"
+        },
+        {
+            "prod_id": "4",
+            "cat_id": "4",
+            "nombre": "Hombre Invisible",
+            "precio": 19.95,
+            "descripcion": "Un frío día de invierno un desconocido llega a la posada de una pequeña localidad inglesa, abrigado de pies a cabeza, con gafas oscuras y vendas en la cara. Su carácter reservado levanta sospechas entre los vecinos, por lo que, cuando empiezan a suceder acontecimientos extraños, deciden averiguar quién es ese personaje cuyo rostro no han visto. Publicada originalmente en 1897, El hombre invisible cuenta las contradicciones de un joven y ambicioso científico que, tras un largo y arduo trabajo, encuentra la fórmula de la invisibilidad. Pero lo que inicialmente parecía un logro brillante termina convirtiéndose en una pesadilla. En esta novela H. G. Wells expone los peligros del mal uso de la ciencia y nos invita a reflexionar sobre sus límites éticos.",
+            "in_stock": true,
+            "cantidad": 5,
+            "rating": 2,
+            "imagen": "assets/images/prod_hombre_invisible.webp",
+            "instock": true,
+            "tag_name" :"#Ficcion"
+        },
+        {
+            "prod_id": "5",
+            "cat_id": "4",
+            "nombre": "Narraciones Extraordinarias",
+            "precio": 20.95,
+            "descripcion": "Edgar Allan Poe (1809-1849) es, sin duda, uno de los maestros del relato corto, género del que fue pionero. Célebre por sus historias de terror y misterio, Poe supo dar vida y expresión a las regiones más oscuras y turbulentas del alma humana. Narraciones extraordinarias reúne una selección de sus mejores cuentos y varios de sus maravillosos poemas. Las ilustraciones han sido creadas expresamente para esta edición.",
+            "in_stock": true,
+            "cantidad": 15,
+            "rating": 4,
+            "imagen": "assets/images/prod_narraciones_extraordinarias.webp",
+            "instock": true,
+            "tag_name" :"#Ficcion"
+        },
+        {
+            "prod_id": "6",
+            "cat_id": "2",
+            "nombre": "Nosotros en la Luna",
+            "precio": 14.95,
+            "descripcion": "Cuando Rhys y Ginger se conocen en las calles de la ciudad de la luz, no imaginan que sus vidas se unirán para siempre, a pesar de la distancia y de que no puedan ser más diferentes. Ella vive en Londres y a veces se siente tan perdida que se ha olvidado hasta de sus propios sueños. Él es incapaz de quedarse quieto en ningún lugar y cree saber quién es. Y cada noche su amistad crece entre e-mails llenos de confidencias, dudas e inquietudes. Pero ¿qué ocurre cuando el paso del tiempo pone a prueba su relación?",
+            "in_stock": true,
+            "cantidad": 7,
+            "rating": 4,
+            "imagen": "assets/images/prod_nosotros_en_la_luna.webp",
+            "instock": true,
+            "tag_name" :"#Romance"
+        },
+        {
+            "prod_id": "7",
+            "cat_id": "4",
+            "nombre": "De la Tierra a La Luna",
+            "precio": 7.50,
+            "descripcion": "A Julio Verne se le considera el creador de la novela de ciencia ficción, pues se anticipó a avances científicos venideros, como sucede en De la Tierra a la Luna con los cohetes y los viajes espaciales. Esta novela crea la irónica ficción de que los hombres de negocios yanquis, que habían ganado la guerra de secesión en Estados Unidos, se hallaban aburridos sin guerra y decidieron enviar proyectiles al espacio.",
+            "in_stock": true,
+            "cantidad": 2,
+            "rating": 4,
+            "imagen": "assets/images/prod_de_la_tierra_a_la_luna.jpg",
+            "instock": true,
+            "tag_name" :"#Ficcion"
+        },
+        {
+            "prod_id": "8",
+            "cat_id": "3",
+            "nombre": "Tales of Mistery and Terror",
+            "precio": 7.95,
+            "descripcion": "Trece historias de terror, suspenso y sobrenatural. 'El pozo y el péndulo', 'La caída de la casa Usher' y 'El gato negro' son solo tres de los cuentos más famosos de Edgar Allan Poe en esta escalofriante colección.",
+            "in_stock": true,
+            "cantidad": 8,
+            "rating": 3,
+            "imagen": "assets/images/prod_tales_of_mistery.webp",
+            "instock": true,
+            "tag_name" :"#Terror"
+        },
+        {
+            "prod_id": "9",
+            "cat_id": "1",
+            "nombre": "El Señor De Los Anillos",
+            "precio": 16.95,
+            "descripcion": "En la adormecida e idílica Comarca, un joven hobbit recibe un encargo: custodiar el Anillo Único y emprender el viaje para su destrucción en la Grieta del Destino. Acompañado por magos, hombres, elfos y enanos, atravesará la Tierra Media y se internará en las sombras de Mordor, perseguido siempre por las huestes de Sauron, el Señor Oscuro, dispuesto a recuperar su creación para establecer el dominio definitivo del Mal.",
+            "in_stock": true,
+            "cantidad": 3,
+            "rating": 5,
+            "imagen": "assets/images/prod_el_señor_de_los_anillos.avif",
+            "instock": true,
+            "tag_name" :"#Aventura"
+        },
+        {
+            "prod_id": "10",
+            "cat_id": "3",
+            "nombre": "Ciclos del Hombre Lobo",
+            "precio": 15.95,
+            "descripcion": "Cada vez que la luna llena brilla en la aislada y solitaria ciudad de Tarker's Mills, se producen escenas de increíble horror. Nadie sabe quién será la próxima víctima.",
+            "in_stock": true,
+            "cantidad": 14,
+            "rating": 4,
+            "imagen": "assets/images/prod_ciclos_hombre_lobo.avif",
+            "instock": true,
+            "tag_name" :"#Terror"
+        },
+        {
+            "prod_id": "11",
+            "cat_id": "1",
+            "nombre": "Mitología según Juego de Tronos",
+            "precio": 24.95,
+            "descripcion": "¿Qué sería de Daenerys sin sus dragones? ¿Quién se interesaría por la Guardia de la Noche si no estuvieran los perturbadores Caminantes Blancos al otro lado del Muro? ¿Y de dónde sale Melisandre? En Juego de Tronos abundan las referencias no solo a la mitología griega y romana, sino también a las leyendas nórdicas, anglosajonas y artúricas.",
+            "in_stock": true,
+            "cantidad": 4,
+            "rating": 4,
+            "imagen": "assets/images/prod_juego_de_tronos.jpg",
+            "instock": true,
+            "tag_name" :"#Aventura"
+        },
+        {
+            "prod_id": "12",
+            "cat_id": "2",
+            "nombre": "Tiempo de las Cerezas",
+            "precio": 29.95,
+            "descripcion": "Aurélie, la encantadora cocinera que regenta el restaurante Le Temps des Cerises, en el barrio de Saint-Germain de París, y André, editor y escritor de éxito, son pareja desde hace un año. El día de San Valentín se acerca, y con él la fecha perfecta para una proposición de matrimonio, pero antes de que André pueda hacer la gran pregunta, sucede algo inesperado: el pequeño restaurante de Aurélie recibe una estrella Michelin y la joven cocinera no puede contener su alegría... durante tres días. La sorpresa que parecía poner la guinda a la felicidad de la pareja ha sido solo el resultado de una confusión. Y cuando Aurélie conoce al auténtico destinatario de la distinción, el chef Jean-Marie Marronnier, que no solo cocina como los dioses sino que tiene un auténtico Monet colgado en su restaurante, las cosas se van a complicar aún más...",
+            "in_stock": true,
+            "cantidad":5,
+            "rating": 4,
+            "imagen": "assets/images/prod_tiempo_de_las_cerezas.jpg",
+            "instock": true,
+            "tag_name" :"#Romance"
+        }
+        
+    ]
+}

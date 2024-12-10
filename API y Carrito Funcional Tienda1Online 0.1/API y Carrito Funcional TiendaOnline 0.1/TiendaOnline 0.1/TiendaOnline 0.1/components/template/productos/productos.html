@@ -1,0 +1,95 @@
+<div class="container">
+  <!-- Fila del formulario -->
+  <div class="form-row align-items-center mt-4">
+    <!-- Encabezado -->
+    <div class="col-md-6">
+      <h3><strong>Libros de la categoría:</strong> {{$ctrl.getCategoriaName($ctrl.currentCategoria)}}</h3>
+    </div>
+
+    <!-- Input para realizar la búsqueda -->
+    <div class="col-md-3">
+      <div class="form-group input-group container">
+        <div class="input-group-prepend">
+          <div class="input-group-text"><i class="bi bi-search"></i></div>
+        </div>
+        <input type="text" ng-model="$ctrl.textParam" ng-change="$ctrl.searchProducts()" placeholder="Buscar" class="form-control">
+
+      </div>
+    </div>
+
+    <!-- Select para seleccionar la categoría -->
+    <div class="form-group col-md-3">
+      <select ng-model="$ctrl.currentCategoria" ng-change="$ctrl.changeCategoria()" class="form-control">
+        <option value="0">Todos</option>
+        <option value="{{categoria.cat_id}}" ng-repeat="categoria in $ctrl.categorias">
+          {{categoria.cat_nombre}}
+        </option>
+      </select>
+      
+    </div>
+  </div>
+  <hr>
+
+  <!-- Filas de los productos -->
+  <div class="row row-cols-1 row-cols-md-3" id="cards">
+    <div class="col mb-3 card-group" ng-repeat="prod in $ctrl.productos">
+      <div class="card custom-card">
+        <img ng-src="{{prod.imagen}}" class="card-img-top custom-image-size" alt="...">
+        <div class="card-body">
+          <div class="title-cards">
+            <h5 class="card-title crop-text-2">{{prod.nombre}}</h5>
+            <h6 class="card-precio">${{prod.precio | number:2 }}</h6>
+          </div>
+          <p class="card-text text-truncate">{{prod.descripcion}}</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between align-items-center">
+          <span class="categoria-label">{{prod.tag_name}}</span>
+          <button type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#detalles-modal" ng-click="$ctrl.currProducto = prod">
+            Detalles
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Modal para mostrar los detalles del producto -->
+  <div class="modal fade" id="detalles-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Detalle</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="card m-0">
+            <img ng-src="{{$ctrl.currProducto.imagen}}" class="card-img-top" alt="..." style="max-height: 350px; max-width: 250px; margin: 0 auto;">
+            <div class="card-header bg-white mt-2">
+              <div class="d-flex justify-content-between align-items-center">
+                <h4 class="tex-producto">{{$ctrl.currProducto.nombre}}</h4>
+                <h5 class="text-precio">${{$ctrl.currProducto.precio | number:2 }}</h5>
+              </div>
+            </div>
+            <div class="card-body p-2">
+              <span class="fa fa-star" ng-class="$ctrl.currProducto.rating >= 1 ? 'checked-star' : ''"></span>
+              <span class="fa fa-star" ng-class="$ctrl.currProducto.rating >= 2 ? 'checked-star' : ''"></span>
+              <span class="fa fa-star" ng-class="$ctrl.currProducto.rating >= 3 ? 'checked-star' : ''"></span>
+              <span class="fa fa-star" ng-class="$ctrl.currProducto.rating >= 4 ? 'checked-star' : ''"></span>
+              <span class="fa fa-star" ng-class="$ctrl.currProducto.rating >= 5 ? 'checked-star' : ''"></span>
+              
+              <p class="card-text text-sm">{{$ctrl.currProducto.descripcion}}</p>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal" ng-click="$ctrl.add($ctrl.currProducto.prod_id)">
+              <i class="bi bi-cart-plus"></i> Agregar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

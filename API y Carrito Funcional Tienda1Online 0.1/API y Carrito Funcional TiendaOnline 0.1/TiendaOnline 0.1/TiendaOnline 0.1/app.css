@@ -1,0 +1,78 @@
+/* app css hoja de estilo para index */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+footer {
+  background-color: #d1cfcf;
+  padding: 20px 0;
+}
+
+
+
+/* diseño carrusel*/
+.carousel-item img {
+  width: auto;
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 670px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* media para el carrusel  */
+ @media (max-width: 768px) {
+  .carousel-item {
+    height: 300px; 
+  }
+
+  @media (max-width: 576px) {
+    .carousel-item img {
+        max-height: 300px;
+    }
+}
+}
+/* encabezado  */
+
+a .title-encabezado{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+}
+
+a .title-encabezado:hover{
+  text-decoration: underline;
+  color: rgb(177, 0, 0);
+}
+
+/* textos cards */
+.text-precio{
+  font-size:3rem;
+}
+
+.tex-producto{
+  font-size: 20px;
+}
+
